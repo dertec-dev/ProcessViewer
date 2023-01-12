@@ -1,0 +1,19 @@
+﻿<Window x:Class="ProcessViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProcessViewer"
+        mc:Ignorable="d"
+        Title="Process Viewer" Height="450" Width="400">
+    <Grid x:Name="mainGrid">
+        <ListView x:Name="processView"  Margin="0,0,0,50">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ProcessName" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="showButton" Content="Show Process Name" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom" Width="160" Click="showButton_Click"/>
+    </Grid>
+</Window>
