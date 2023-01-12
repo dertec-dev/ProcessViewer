@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace ProcessViewer
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// MainWindow.xaml の相互作用ロジック
     /// </summary>
     public partial class MainWindow : Window
     {
